@@ -6,11 +6,15 @@ interface ChipProps {
 }
 
 export default function Chip({ chip, lost }: ChipProps) {
+	const chipStyle = {
+		backgroundColor: chip.backgroundColor,
+		color: chip.color,
+	};
+
 	return (
 		<div
-			className={`relative bg-[${chip.backgroundColor}] text-[${chip.color}] rounded p-2 ${
-				lost && "opacity-50"
-			}`}>
+			className={`relative rounded p-2 ${lost ? "opacity-50" : ""}`}
+			style={chipStyle}>
 			<span>{chip.name}</span>
 			{lost && (
 				<span className="absolute top-1/2 left-1/2 -translate-1/2">💀</span>
