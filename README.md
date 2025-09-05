@@ -8,6 +8,12 @@ A hangman-style word game where programming languages pay the price for your wro
 Instead of a stick figure, nine languages line up — with each mistake, one gets “deprecated.”  
 Guess the word in time, or watch a language vanish from the stack.
 
+## 🎮 Demo
+
+![Game Demo](docs/demo.gif)
+
+Try it out: [Live Demo](https://nine-lives-of-code.vercel.app/)
+
 ## ⚡ Features
 
 -   Hangman mechanics with a coding twist
@@ -63,6 +69,11 @@ Then open [http://localhost:5173/](http://localhost:5173/) in your browser
 
 ## 🗺️ Roadmap
 
+-   [ ] A start and restart button
+-   [ ] Mobile responsiveness
+-   [ ] Allow users to enter letters via keyboard
+-   [ ] Stop the timer if user has switched to other tab for more than 2 mins
+-   [ ] Update tab title if user has switched to other tab for more than 2 mins
 -   [ ] Add levels (Easy / Medium / Hard) so users can pick difficulty, and words will be chosen accordingly
 -   [ ] Leaderboard with fastest completion times
 -   [ ] Theming (light/dark mode)
