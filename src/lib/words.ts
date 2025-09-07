@@ -483,7 +483,1040 @@ const words = [
 	"young",
 ];
 
+const wordsWithHints = [
+	{
+		word: "apple",
+		hint1: "I’m sweet, round, and often red, yet I’m not a cherry.",
+		hint2: "One bite from me caused big trouble in a garden long ago.",
+	},
+	{
+		word: "ball",
+		hint1: "I roll away when you chase me.",
+		hint2: "Kick, throw, or catch — I’m always in play.",
+	},
+	{
+		word: "banana",
+		hint1: "I wear a jacket that you peel.",
+		hint2: "I’m yellow, curved, and monkeys love me.",
+	},
+	{
+		word: "bed",
+		hint1: "I wait for you every night.",
+		hint2: "You dream on me but I never sleep.",
+	},
+	{
+		word: "bird",
+		hint1: "I sing but have no words.",
+		hint2: "I soar through the sky with feathered wings.",
+	},
+	{
+		word: "book",
+		hint1: "I hold many worlds inside me.",
+		hint2: "I have pages to turn, but no voice to speak.",
+	},
+	{
+		word: "bridge",
+		hint1: "I join things that can’t touch.",
+		hint2: "You cross me without getting your feet wet.",
+	},
+	{
+		word: "bus",
+		hint1: "I carry many but walk on none.",
+		hint2: "You hop on me to reach school or work.",
+	},
+	{
+		word: "cake",
+		hint1: "I arrive with candles but don’t burn down.",
+		hint2: "I’m sweet, layered, and perfect for birthdays.",
+	},
+	{
+		word: "car",
+		hint1: "I run without legs.",
+		hint2: "I take you places on four wheels.",
+	},
+	{
+		word: "cat",
+		hint1: "I walk silently but demand attention.",
+		hint2: "I purr when happy and chase mice for fun.",
+	},
+	{
+		word: "chair",
+		hint1: "I stand but never walk.",
+		hint2: "I carry you when you sit down.",
+	},
+	{
+		word: "chicken",
+		hint1: "I cluck but don’t speak.",
+		hint2: "I give eggs but never eat them myself.",
+	},
+	{
+		word: "clock",
+		hint1: "I have hands but no arms.",
+		hint2: "I move all day but never leave my place.",
+	},
+	{
+		word: "cloud",
+		hint1: "I drift but never walk.",
+		hint2: "I cry as rain when too heavy.",
+	},
+	{
+		word: "cow",
+		hint1: "I give without asking.",
+		hint2: "You drink my milk but never see me in your glass.",
+	},
+	{
+		word: "cup",
+		hint1: "I’m empty until you fill me.",
+		hint2: "I hold drinks but never drink myself.",
+	},
+	{
+		word: "dog",
+		hint1: "I guard, play, and stay loyal.",
+		hint2: "I wag my tail when I see you home.",
+	},
+	{
+		word: "door",
+		hint1: "I open without speaking.",
+		hint2: "I keep you in or let you out.",
+	},
+	{
+		word: "duck",
+		hint1: "I float but I’m not a boat.",
+		hint2: "I quack when I waddle to the pond.",
+	},
+	{
+		word: "egg",
+		hint1: "I crack but don’t complain.",
+		hint2: "Inside me is breakfast waiting to happen.",
+	},
+	{
+		word: "fish",
+		hint1: "I breathe but not air.",
+		hint2: "I swim with fins but never walk on land.",
+	},
+	{
+		word: "flower",
+		hint1: "I smile with colors.",
+		hint2: "I bloom in gardens and wilt in time.",
+	},
+	{
+		word: "forest",
+		hint1: "I’m made of many but spoken of as one.",
+		hint2: "Lose your path in me, and trees will laugh quietly.",
+	},
+	{
+		word: "friend",
+		hint1: "I’m chosen, not born.",
+		hint2: "I stand by you when others walk away.",
+	},
+	{
+		word: "game",
+		hint1: "I entertain but never eat.",
+		hint2: "You win or lose me but never eat me.",
+	},
+	{
+		word: "garden",
+		hint1: "I’m full of life but rooted to the ground.",
+		hint2: "Flowers and vegetables thrive where I grow.",
+	},
+	{
+		word: "girl",
+		hint1: "I can be young or grown.",
+		hint2: "I’m not a boy but just as strong.",
+	},
+	{
+		word: "hat",
+		hint1: "I sit on top without legs.",
+		hint2: "I shade your head from sun or rain.",
+	},
+	{
+		word: "house",
+		hint1: "I have rooms but no wheels.",
+		hint2: "I shelter you from rain, wind, and sun.",
+	},
+	{
+		word: "island",
+		hint1: "I’m surrounded but never crowded.",
+		hint2: "You can visit me by boat, but I can’t come to you.",
+	},
+	{
+		word: "juice",
+		hint1: "I’m liquid but not water.",
+		hint2: "I’m squeezed from fruits into your glass.",
+	},
+	{
+		word: "kite",
+		hint1: "I dance when the wind sings.",
+		hint2: "I fly high but need a string to return.",
+	},
+	{
+		word: "lamp",
+		hint1: "I shine without the sun.",
+		hint2: "I chase away darkness at the flick of a switch.",
+	},
+	{
+		word: "lion",
+		hint1: "I roar but don’t speak.",
+		hint2: "I’m called the king but wear no crown.",
+	},
+	{
+		word: "milk",
+		hint1: "I’m white but not snow.",
+		hint2: "I flow from cows into your glass.",
+	},
+	{
+		word: "mirror",
+		hint1: "I speak without a voice.",
+		hint2: "I show you yourself, but I’m not you.",
+	},
+	{
+		word: "moon",
+		hint1: "I vanish by day but rule the night.",
+		hint2: "I borrow light to shine, yet never burn myself.",
+	},
+	{
+		word: "mountain",
+		hint1: "I stand tall but never move.",
+		hint2: "Climbers chase my peak, though I never climb down.",
+	},
+	{
+		word: "pen",
+		hint1: "I spill without crying.",
+		hint2: "I speak in ink but make no sound.",
+	},
+	{
+		word: "pencil",
+		hint1: "I’m useless until my head is broken.",
+		hint2: "I grow smaller the more I’m used.",
+	},
+	{
+		word: "phone",
+		hint1: "I let you speak to someone far away.",
+		hint2: "I ring to get your attention, though I have no mouth.",
+	},
+	{
+		word: "pig",
+		hint1: "I roll in mud but don’t complain.",
+		hint2: "I oink and love a messy meal.",
+	},
+	{
+		word: "plane",
+		hint1: "I fly but have no feathers.",
+		hint2: "I carry many people across the sky.",
+	},
+	{
+		word: "queen",
+		hint1: "I rule but wear no chains.",
+		hint2: "In chess or kingdoms, I’m the most powerful lady.",
+	},
+	{
+		word: "rain",
+		hint1: "I fall but never get hurt.",
+		hint2: "I patter on rooftops and fill rivers below.",
+	},
+	{
+		word: "river",
+		hint1: "I’m always running but never have legs.",
+		hint2: "You can sail on me, but I never leave my bed.",
+	},
+	{
+		word: "road",
+		hint1: "I stretch but never yawn.",
+		hint2: "Cars follow me without getting lost in grass.",
+	},
+	{
+		word: "robot",
+		hint1: "I move without life.",
+		hint2: "I follow orders but never dream.",
+	},
+	{
+		word: "school",
+		hint1: "I’m full of lessons but no teachers live here.",
+		hint2: "You visit me to learn, not to rest.",
+	},
+	{
+		word: "ship",
+		hint1: "I float but I’m not a duck.",
+		hint2: "I carry treasures and people across the sea.",
+	},
+	{
+		word: "shoe",
+		hint1: "I travel everywhere but never alone.",
+		hint2: "I protect your feet on every step.",
+	},
+	{
+		word: "snake",
+		hint1: "I slither but never walk.",
+		hint2: "I hiss to warn but have no feet.",
+	},
+	{
+		word: "snow",
+		hint1: "I fall but don’t break.",
+		hint2: "I blanket the ground in white silence.",
+	},
+	{
+		word: "star",
+		hint1: "I shine but never burn you.",
+		hint2: "You see me twinkle when night arrives.",
+	},
+	{
+		word: "sun",
+		hint1: "I wake the world each morning.",
+		hint2: "I shine brightest in the day sky.",
+	},
+	{
+		word: "table",
+		hint1: "I stand on legs but never walk.",
+		hint2: "I carry your meals without eating them.",
+	},
+	{
+		word: "tiger",
+		hint1: "I wear stripes but no clothes.",
+		hint2: "I stalk the jungle with a roar.",
+	},
+	{
+		word: "train",
+		hint1: "I have many cars but no wheels of my own.",
+		hint2: "I follow my path without ever turning away.",
+	},
+	{
+		word: "tree",
+		hint1: "I grow tall but stay rooted.",
+		hint2: "I wear green crowns and give shade below.",
+	},
+	{
+		word: "watch",
+		hint1: "I sit on your wrist but never walk away.",
+		hint2: "I keep ticking so you know when to hurry.",
+	},
+	{
+		word: "water",
+		hint1: "I have no taste yet quench all thirst.",
+		hint2: "I can flow, freeze, or fall from the sky.",
+	},
+	{
+		word: "window",
+		hint1: "I let light in but never leave.",
+		hint2: "You look through me but can’t walk through me (unless you break me).",
+	},
+	{
+		word: "zebra",
+		hint1: "I wear stripes but never change outfits.",
+		hint2: "I look like a horse dressed in black and white.",
+	},
+	{
+		word: "air",
+		hint1: "I’m everywhere but can’t be seen.",
+		hint2: "You breathe me every moment without noticing.",
+	},
+	{
+		word: "arm",
+		hint1: "I reach but never leave the body.",
+		hint2: "I help you lift, hug, and carry.",
+	},
+	{
+		word: "baby",
+		hint1: "I’m small but make loud noises.",
+		hint2: "Everyone smiles when I giggle, not when I cry.",
+	},
+	{
+		word: "bag",
+		hint1: "I carry things but have no hands.",
+		hint2: "I open wide but never speak.",
+	},
+	{
+		word: "balloon",
+		hint1: "I rise when you fill me.",
+		hint2: "A string ties me down or I float away.",
+	},
+	{
+		word: "bat",
+		hint1: "I fly at night but I’m not the moon.",
+		hint2: "I hang upside down and love the dark.",
+	},
+	{
+		word: "bell",
+		hint1: "I ring without fingers.",
+		hint2: "I call attention with my loud chime.",
+	},
+	{
+		word: "box",
+		hint1: "I hide things inside.",
+		hint2: "I have sides and corners but no mouth.",
+	},
+	{
+		word: "boy",
+		hint1: "I can be young or grown.",
+		hint2: "I’m not a girl but just as loud.",
+	},
+	{
+		word: "cake",
+		hint1: "I arrive with candles but don’t burn down.",
+		hint2: "I’m sweet, layered, and perfect for birthdays.",
+	},
+	{
+		word: "cap",
+		hint1: "I sit on your head but never complain.",
+		hint2: "I shade your eyes on sunny days.",
+	},
+	{
+		word: "carrot",
+		hint1: "I’m orange and crunchy.",
+		hint2: "Bunnies chase me more than humans do.",
+	},
+	{
+		word: "cow",
+		hint1: "I give without asking.",
+		hint2: "You drink my milk but never see me in your glass.",
+	},
+	{
+		word: "crow",
+		hint1: "I wear black but not for fashion.",
+		hint2: "I caw loudly and fly over fields.",
+	},
+	{
+		word: "deer",
+		hint1: "I’m gentle and swift in forests.",
+		hint2: "I wear antlers like a crown on my head.",
+	},
+	{
+		word: "doll",
+		hint1: "I smile but never speak.",
+		hint2: "Children dress me but I never grow.",
+	},
+	{
+		word: "fan",
+		hint1: "I spin to make you cool.",
+		hint2: "I move air but never leave the room.",
+	},
+	{
+		word: "goat",
+		hint1: "I climb rocks better than shoes.",
+		hint2: "I bleat and love chewing almost anything.",
+	},
+	{
+		word: "gun",
+		hint1: "I’m loud and fast but not alive.",
+		hint2: "I shoot without moving my legs.",
+	},
+	{
+		word: "hill",
+		hint1: "I’m smaller than a mountain but still tall.",
+		hint2: "Children love rolling down my slopes.",
+	},
+	{
+		word: "king",
+		hint1: "I rule with no homework.",
+		hint2: "I wear a crown and sit on a throne.",
+	},
+	{
+		word: "leg",
+		hint1: "I walk but don’t wander alone.",
+		hint2: "I hold you up every step of the way.",
+	},
+	{
+		word: "man",
+		hint1: "I can be young or old.",
+		hint2: "I’m grown from a boy but never a girl.",
+	},
+	{
+		word: "men",
+		hint1: "We stand together but are not a crowd.",
+		hint2: "We are boys grown older, side by side.",
+	},
+	{
+		word: "nest",
+		hint1: "I’m home but not a house.",
+		hint2: "I cradle eggs high in the trees.",
+	},
+	{
+		word: "rat",
+		hint1: "I sneak around looking for crumbs.",
+		hint2: "I squeak and dart quickly through holes.",
+	},
+	{
+		word: "ring",
+		hint1: "I circle you but never close in.",
+		hint2: "I’m small, shiny, and often worn on a finger.",
+	},
+	{
+		word: "toy",
+		hint1: "I’m made for fun, not for food.",
+		hint2: "Children play with me but I never grow old.",
+	},
+	{
+		word: "well",
+		hint1: "I’m deep but not wide.",
+		hint2: "People lower buckets into me for water.",
+	},
+	{
+		word: "ballpen",
+		hint1: "I write smoothly but never speak.",
+		hint2: "I hold ink inside and release it on paper.",
+	},
+	{
+		word: "blackboard",
+		hint1: "I’m dark but filled with lessons.",
+		hint2: "Teachers write on me with chalk that vanishes.",
+	},
+	{
+		word: "bonnet",
+		hint1: "I cover but not with walls.",
+		hint2: "I’m a soft hat, often tied under the chin.",
+	},
+	{
+		word: "broom",
+		hint1: "I sweep but never walk.",
+		hint2: "I chase dust away with every stroke.",
+	},
+	{
+		word: "busstop",
+		hint1: "I wait without moving.",
+		hint2: "People gather at me to catch a ride.",
+	},
+	{
+		word: "cage",
+		hint1: "I trap but don’t chase.",
+		hint2: "Birds sit inside me but can’t fly away.",
+	},
+	{
+		word: "candle",
+		hint1: "I melt as I shine.",
+		hint2: "I light dark rooms but grow smaller each hour.",
+	},
+	{
+		word: "cart",
+		hint1: "I carry loads but have no backache.",
+		hint2: "Wheels help me move what’s too heavy to hold.",
+	},
+	{
+		word: "chalk",
+		hint1: "I’m short-lived on a board.",
+		hint2: "I leave white marks but vanish with a wipe.",
+	},
+	{
+		word: "classroom",
+		hint1: "I’m full of voices but never speak myself.",
+		hint2: "Students sit inside me to learn each day.",
+	},
+	{
+		word: "comb",
+		hint1: "I pass through without walking.",
+		hint2: "I straighten hair but have no fingers.",
+	},
+	{
+		word: "drum",
+		hint1: "I make noise when struck.",
+		hint2: "Musicians beat me to set the rhythm.",
+	},
+	{
+		word: "envelope",
+		hint1: "I carry words without speaking.",
+		hint2: "Letters hide inside me until I’m opened.",
+	},
+	{
+		word: "eraser",
+		hint1: "I undo without scolding.",
+		hint2: "I vanish mistakes made in pencil.",
+	},
+	{
+		word: "farmer",
+		hint1: "I work without a desk.",
+		hint2: "I grow food from soil for others to eat.",
+	},
+	{
+		word: "farm",
+		hint1: "I’m land that feeds many.",
+		hint2: "Animals and crops live together on me.",
+	},
+	{
+		word: "garden",
+		hint1: "I’m full of life but rooted to the ground.",
+		hint2: "Flowers and vegetables thrive where I grow.",
+	},
+	{
+		word: "hammer",
+		hint1: "I hit but never get angry.",
+		hint2: "I drive nails deep without hands of my own.",
+	},
+	{
+		word: "jail",
+		hint1: "I hold people but not with hugs.",
+		hint2: "Bars keep you inside until freedom returns.",
+	},
+	{
+		word: "letter",
+		hint1: "I travel without legs.",
+		hint2: "You read me after I arrive in the mail.",
+	},
+	{
+		word: "library",
+		hint1: "I’m quiet but filled with voices.",
+		hint2: "Shelves of books wait for readers inside me.",
+	},
+	{
+		word: "market",
+		hint1: "I’m noisy but full of life.",
+		hint2: "People trade goods loudly in my space.",
+	},
+	{
+		word: "match",
+		hint1: "I’m small but fiery.",
+		hint2: "One strike and I burn bright, then vanish.",
+	},
+	{
+		word: "palace",
+		hint1: "I stand tall with many rooms.",
+		hint2: "Kings and queens live inside my walls.",
+	},
+	{
+		word: "park",
+		hint1: "I’m green and open for all.",
+		hint2: "People stroll, play, and rest in me.",
+	},
+	{
+		word: "plane",
+		hint1: "I fly but have no feathers.",
+		hint2: "I carry many people across the sky.",
+	},
+	{
+		word: "postoffice",
+		hint1: "I’m busy with letters but never write them.",
+		hint2: "Parcels and stamps gather here before journeys.",
+	},
+	{
+		word: "prison",
+		hint1: "I hold but never hug.",
+		hint2: "Inside my walls, freedom is locked away.",
+	},
+	{
+		word: "rainbow",
+		hint1: "I appear after tears of the sky.",
+		hint2: "I wear seven colors but no fabric.",
+	},
+	{
+		word: "schoolbus",
+		hint1: "I roll up when learning calls.",
+		hint2: "I’m yellow and carry children to class.",
+	},
+	{
+		word: "soldier",
+		hint1: "I march when told.",
+		hint2: "I wear a uniform and guard my land.",
+	},
+	{
+		word: "stairs",
+		hint1: "I go up and down but never leave.",
+		hint2: "You step on me to climb floors.",
+	},
+	{
+		word: "teacher",
+		hint1: "I give answers without asking questions.",
+		hint2: "I guide students with chalk, books, and patience.",
+	},
+	{
+		word: "village",
+		hint1: "I’m smaller than a city but full of life.",
+		hint2: "I hold houses, farms, and neighbors together.",
+	},
+	{
+		word: "blacksmith",
+		hint1: "I shape with fire but don’t burn.",
+		hint2: "Horseshoes and swords are born from my hammer.",
+	},
+	{
+		word: "carpenter",
+		hint1: "I build but don’t live inside.",
+		hint2: "With wood and nails, I craft homes and furniture.",
+	},
+	{
+		word: "doctor",
+		hint1: "I heal without magic.",
+		hint2: "I treat sickness with medicine and care.",
+	},
+	{
+		word: "fisherman",
+		hint1: "I wait with patience by water.",
+		hint2: "I cast nets or rods to catch dinner.",
+	},
+	{
+		word: "goldsmith",
+		hint1: "I work with what glitters.",
+		hint2: "Rings and necklaces pass through my hands of fire.",
+	},
+	{
+		word: "mason",
+		hint1: "I stack without toys.",
+		hint2: "Bricks and stones obey my craft.",
+	},
+	{
+		word: "nurse",
+		hint1: "I help but don’t command.",
+		hint2: "In hospitals, I care for the weak and sick.",
+	},
+	{
+		word: "pilot",
+		hint1: "I guide wings without feathers.",
+		hint2: "I sit in the cockpit and steer the sky.",
+	},
+	{
+		word: "sailor",
+		hint1: "I live where land ends.",
+		hint2: "I steer ships across the restless seas.",
+	},
+	{
+		word: "shepherd",
+		hint1: "I walk where my flock wanders.",
+		hint2: "I guard sheep with staff and watchful eyes.",
+	},
+	{
+		word: "shoemaker",
+		hint1: "I work with leather, not paper.",
+		hint2: "I stitch and mend what protects your feet.",
+	},
+	{
+		word: "teacher",
+		hint1: "I hold no crown but lead minds.",
+		hint2: "I explain until the lesson sticks.",
+	},
+	{
+		word: "tailor",
+		hint1: "I cut cloth but never wear it.",
+		hint2: "I stitch fabric into perfect outfits.",
+	},
+	{
+		word: "barber",
+		hint1: "I cut but don’t wound.",
+		hint2: "I trim hair and shape beards with care.",
+	},
+	{
+		word: "postman",
+		hint1: "I walk many roads with no map.",
+		hint2: "I deliver letters right to your door.",
+	},
+	{
+		word: "cobbler",
+		hint1: "I fix what you walk on.",
+		hint2: "Shoes return whole after I mend them.",
+	},
+	{
+		word: "engineer",
+		hint1: "I design but don’t decorate.",
+		hint2: "Bridges, machines, and codes are born from my mind.",
+	},
+	{
+		word: "watchman",
+		hint1: "I guard without sleeping much.",
+		hint2: "Through night and day, I keep an eye on things.",
+	},
+	{
+		word: "driver",
+		hint1: "I move without walking.",
+		hint2: "I steer wheels to carry people and goods.",
+	},
+	{
+		word: "actor",
+		hint1: "I live many lives but only on stage.",
+		hint2: "I pretend to be others for your applause.",
+	},
+	{
+		word: "actress",
+		hint1: "I’m a star without burning.",
+		hint2: "I play roles on screen and stage alike.",
+	},
+	{
+		word: "dancer",
+		hint1: "I speak with my feet.",
+		hint2: "Music guides my every graceful step.",
+	},
+	{
+		word: "leader",
+		hint1: "I walk ahead but don’t walk alone.",
+		hint2: "Others follow my decisions and steps.",
+	},
+	{
+		word: "poet",
+		hint1: "I speak in lines not straight.",
+		hint2: "I paint with words instead of brushes.",
+	},
+	{
+		word: "singer",
+		hint1: "I carry tunes instead of bags.",
+		hint2: "I turn words into music with my voice.",
+	},
+	{
+		word: "cook",
+		hint1: "I mix fire and food but don’t eat first.",
+		hint2: "I turn raw ingredients into meals on your plate.",
+	},
+	{
+		word: "judge",
+		hint1: "I listen before I speak.",
+		hint2: "In court, my word decides right from wrong.",
+	},
+	{
+		word: "lawyer",
+		hint1: "I fight without fists.",
+		hint2: "I defend with arguments in front of the judge.",
+	},
+	{
+		word: "servant",
+		hint1: "I work but don’t command.",
+		hint2: "I follow orders to serve others’ needs.",
+	},
+	{
+		word: "principal",
+		hint1: "I rule a school but not a country.",
+		hint2: "Teachers report to me, and I lead students.",
+	},
+	{
+		word: "doctor",
+		hint1: "I heal without potions of magic.",
+		hint2: "I treat the sick with medicine and care.",
+	},
+	{
+		word: "engineer",
+		hint1: "I plan, not just dream.",
+		hint2: "Machines, bridges, and code take shape through me.",
+	},
+	{
+		word: "nurse",
+		hint1: "I comfort the weak without riches.",
+		hint2: "I give care, medicine, and kindness at bedsides.",
+	},
+	{
+		word: "policeman",
+		hint1: "I guard streets, not castles.",
+		hint2: "With uniform and badge, I keep the peace.",
+	},
+	{
+		word: "farmer",
+		hint1: "I dig without greed.",
+		hint2: "I grow food in fields for all to eat.",
+	},
+	{
+		word: "pilot",
+		hint1: "I don’t have wings but I fly.",
+		hint2: "I sit in the cockpit and guide planes above clouds.",
+	},
+	{
+		word: "soldier",
+		hint1: "I march to the call of duty.",
+		hint2: "I defend my land with courage and arms.",
+	},
+	{
+		word: "astronaut",
+		hint1: "I travel far beyond the clouds.",
+		hint2: "I float in space where no air exists.",
+	},
+	{
+		word: "dentist",
+		hint1: "I fix what smiles reveal.",
+		hint2: "I treat aching teeth with drills and care.",
+	},
+	{
+		word: "artist",
+		hint1: "I create what eyes admire.",
+		hint2: "With paint, clay, or pencil, I give life to imagination.",
+	},
+	{
+		word: "clerk",
+		hint1: "I write more than I speak.",
+		hint2: "I keep records, papers, and accounts in order.",
+	},
+	{
+		word: "cobbler",
+		hint1: "I mend steps that wear out.",
+		hint2: "Shoes become whole again in my hands.",
+	},
+	{
+		word: "tailor",
+		hint1: "I cut and join without wounds.",
+		hint2: "I stitch fabric into clothes that fit.",
+	},
+	{
+		word: "barber",
+		hint1: "I cut what grows back.",
+		hint2: "I shape hair and beards with scissors and razors.",
+	},
+	{
+		word: "driver",
+		hint1: "I move people without walking.",
+		hint2: "I steer wheels to carry passengers and loads.",
+	},
+	{
+		word: "postman",
+		hint1: "I walk roads filled with messages.",
+		hint2: "I deliver letters and parcels to every home.",
+	},
+	{
+		word: "shopkeeper",
+		hint1: "I sell but don’t shout.",
+		hint2: "Goods fill my shelves for customers each day.",
+	},
+	{
+		word: "fisherman",
+		hint1: "I wait with patience by the water.",
+		hint2: "I cast nets or lines to catch fish.",
+	},
+	{
+		word: "shepherd",
+		hint1: "I wander where the flock goes.",
+		hint2: "I guard sheep in fields with my staff.",
+	},
+	{
+		word: "carpenter",
+		hint1: "I shape wood but not trees.",
+		hint2: "Tables, chairs, and doors are born from my hands.",
+	},
+	{
+		word: "scientist",
+		hint1: "I question everything around me.",
+		hint2: "In labs, I test, discover, and explain the unknown.",
+	},
+	{
+		word: "postman",
+		hint1: "I walk streets with paper in hand.",
+		hint2: "I deliver letters and parcels to every home.",
+	},
+	{
+		word: "teacher",
+		hint1: "I plant seeds without soil.",
+		hint2: "I grow knowledge in the minds of students.",
+	},
+	{
+		word: "clown",
+		hint1: "I’m funny without trying hard.",
+		hint2: "I paint my face to make people laugh.",
+	},
+	{
+		word: "magician",
+		hint1: "I trick eyes, not hearts.",
+		hint2: "I pull rabbits from hats and vanish coins.",
+	},
+	{
+		word: "nurse",
+		hint1: "I don’t heal alone.",
+		hint2: "I care for the sick beside doctors.",
+	},
+	{
+		word: "singer",
+		hint1: "I let my voice fly.",
+		hint2: "I turn words into music for ears to enjoy.",
+	},
+	{
+		word: "player",
+		hint1: "I don’t always win, but I always join in.",
+		hint2: "On fields or courts, I compete in games.",
+	},
+	{
+		word: "queen",
+		hint1: "I rule without leaving my seat.",
+		hint2: "In chess or kingdoms, I’m the strongest lady.",
+	},
+	{
+		word: "king",
+		hint1: "I sit high but not alone.",
+		hint2: "I wear a crown and lead a kingdom.",
+	},
+	{
+		word: "painter",
+		hint1: "I color the world with strokes.",
+		hint2: "Brush and canvas bring my visions alive.",
+	},
+	{
+		word: "driver",
+		hint1: "I steer without wings.",
+		hint2: "I carry passengers and goods by road.",
+	},
+	{
+		word: "captain",
+		hint1: "I command a team or a ship.",
+		hint2: "On fields or seas, others follow my lead.",
+	},
+	{
+		word: "farmer",
+		hint1: "I sow and reap, not for myself alone.",
+		hint2: "I grow crops and raise animals on land.",
+	},
+	{
+		word: "astronaut",
+		hint1: "I visit places most only dream of.",
+		hint2: "I float in space far beyond the clouds.",
+	},
+	{
+		word: "doctor",
+		hint1: "I heal pain but not heartbreak.",
+		hint2: "I give medicine and care to the sick.",
+	},
+	{
+		word: "engineer",
+		hint1: "I fix problems the world can’t ignore.",
+		hint2: "Bridges, machines, and code are my creations.",
+	},
+	{
+		word: "pilot",
+		hint1: "I ride clouds but not on horseback.",
+		hint2: "I fly planes high above the ground.",
+	},
+	{
+		word: "soldier",
+		hint1: "I fight for more than myself.",
+		hint2: "I defend my country with courage and arms.",
+	},
+	{
+		word: "chef",
+		hint1: "I create flavors without paint.",
+		hint2: "In kitchens, I turn ingredients into meals.",
+	},
+	{
+		word: "athlete",
+		hint1: "I push my body beyond limits.",
+		hint2: "On tracks and fields, I compete with speed or strength.",
+	},
+	{
+		word: "student",
+		hint1: "I learn but don’t yet teach.",
+		hint2: "Books, lessons, and exams fill my days.",
+	},
+	{
+		word: "child",
+		hint1: "I’m small but full of wonder.",
+		hint2: "I play, learn, and grow every day.",
+	},
+	{
+		word: "woman",
+		hint1: "I’m grown and strong in many roles.",
+		hint2: "I’m not a girl, but once I was one.",
+	},
+	{
+		word: "baby",
+		hint1: "I’m tiny but change lives.",
+		hint2: "I cry for food and comfort, not words.",
+	},
+	{
+		word: "teacher",
+		hint1: "I light minds without matches.",
+		hint2: "I explain lessons until students understand.",
+	},
+	{
+		word: "king",
+		hint1: "I sit on a throne, not a chair.",
+		hint2: "With crown and command, I rule a land.",
+	},
+	{
+		word: "queen",
+		hint1: "I share a throne but not my power.",
+		hint2: "I lead a kingdom with grace and rule.",
+	},
+	{
+		word: "clerk",
+		hint1: "I note down what others forget.",
+		hint2: "I keep offices running with records and papers.",
+	},
+];
+
 export function getRandomWord() {
-	const randomNum = Math.ceil(Math.random() * words.length + 1);
-	return words[randomNum];
+	const randomNum = Math.ceil(Math.random() * wordsWithHints.length + 1);
+	return wordsWithHints[randomNum];
 }
