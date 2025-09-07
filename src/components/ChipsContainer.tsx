@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import type { ChipType } from "../types/ChipType";
 import Chip from "./Chip";
 
@@ -9,6 +7,8 @@ interface ChipsContainerProps {
 	numGuessesLeft: number;
 	hint1: string;
 	hint2: string;
+	isHintVisible: boolean;
+	toggleHintVisibility: () => void;
 }
 
 export default function ChipsContainer({
@@ -17,13 +17,9 @@ export default function ChipsContainer({
 	numGuessesLeft,
 	hint1,
 	hint2,
+	isHintVisible,
+	toggleHintVisibility,
 }: ChipsContainerProps) {
-	const [isHintVisible, setIsHintVisible] = useState(false);
-
-	function displayHint() {
-		setIsHintVisible(true);
-	}
-
 	return (
 		<div className="flex flex-wrap w-64 gap-2 items-center justify-center mt-5 mx-auto">
 			{languages.map((language, index) => (
@@ -43,7 +39,7 @@ export default function ChipsContainer({
 						<button
 							className="text-green-600"
 							type="button"
-							onClick={displayHint}>
+							onClick={toggleHintVisibility}>
 							Want a Hint?💡
 						</button>
 					)}
