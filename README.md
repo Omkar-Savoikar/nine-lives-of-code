@@ -19,24 +19,29 @@ Try it out: [Live Demo](https://nine-lives-of-code.vercel.app/)
 -   Hangman mechanics with a coding twist
 -   Nine programming languages lined up as “lives”
 -   Fast-paced guessing to “save the stack”
+-   On-screen + physical keyboard support
 -   🎉 Confetti celebrations if you win
 -   💀 Ashes fall when you lose
 -   ⏱️ Timer shows how long you lasted (time is not saved)
+-   💡 Hints system (one free + one extra on demand)
 -   🔄 “New Game” button to restart with a fresh word
 -   No difficulty levels — one mode fits all
 
 ## 🕹️ How to Play
 
 1. The game picks a secret word.
-2. Guess letters one at a time.
-3. Each wrong guess “deprecates” a programming language.
-4. You have 9 wrong guesses before the stack is wiped out.
-5. If you win → 🎉 Confetti rains down
-6. If you lose → 💀 Ashes fall
-7. A timer runs during the round to track how long you take — but results aren’t stored
-8. At the end of the game, a **New Game** button appears to let you restart with a new word
+2. You start with one free hint.
+3. Guess letters one at a time - via on-screen keyboard or your own keyboard (desktop/laptop).
+4. Each wrong guess “deprecates” a programming language.
+5. You have 9 wrong guesses before the stack is wiped out.
+6. Need help? Press the 💡 bulb icon for another hint.
+7. If you win → 🎉 Confetti rains down
+8. If you lose → 💀 Ashes fall
+9. A timer runs during the round to track how long you take — but results aren’t stored
+10. At the end of the game, a **New Game** button appears to let you restart with a new word
+11. You can restart the game anytime by clicking on the **Restart** button below the timer.
 
-**SAVE THE LANGUAGES!**
+**⚡ SAVE THE LANGUAGES BEFORE THEY VANISH!**
 
 ## 🚀 Getting Started
 
@@ -61,22 +66,49 @@ npm start
 
 Then open [http://localhost:5173/](http://localhost:5173/) in your browser
 
+## 📂 Project Structure
+
+```plaintext
+nine-lives-of-code/
+├── docs/                # Demo assets (e.g. GIFs, screenshots)
+├── public/              # Static assets
+├── src/
+│ ├── components/      # React components
+│ │ ├── ChipsContainer.tsx
+│ │ ├── GameStatus.tsx
+│ │ ├── Keyboard.tsx
+│ │ ├── Key.tsx
+│ │ ├── Loss.tsx
+│ │ ├── StartModal.tsx
+│ │ ├── Timer.tsx
+│ │ ├── Word.tsx
+│ │ └── Main.tsx     # Main game container
+│ ├── lib/           # Game logic & utilities
+│ │ ├── languages.ts # List of programming languages
+│ │ └── words.ts     # Word + hint provider
+│ ├── App.tsx        # Root component
+│ └── index.tsx      # Entry point
+├── package.json
+└── vite.config.ts
+```
+
+This structure keeps UI components isolated from game logic, making the project easier to scale and maintain.
+
 ## 🛠️ Tech Stack
 
--   React
--   TypeScript
--   Vite
+-   ⚛️ React (with hooks & component-driven design)
+-   🟦 TypeScript (type safety + maintainability)
+-   ⚡ Vite (fast dev + build)
 
 ## 🗺️ Roadmap
 
--   [ ] A start and restart button
 -   [ ] Mobile responsiveness
--   [ ] Allow users to enter letters via keyboard
--   [ ] Stop the timer if user has switched to other tab for more than 2 mins
--   [ ] Update tab title if user has switched to other tab for more than 2 mins
--   [ ] Add levels (Easy / Medium / Hard) so users can pick difficulty, and words will be chosen accordingly
+-   [ ] Pause the timer if user switches tab for more than 2 mins
+-   [ ] Update tab title when user is away
+-   [ ] Dificulty levels (Easy / Medium / Hard)
 -   [ ] Leaderboard with fastest completion times
 -   [ ] Theming (light/dark mode)
+-   [ ] Show users know how many players they've beaten
 
 ## 📖 About This Project
 
