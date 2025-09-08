@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import ReactConfetti from "react-confetti";
 import { languages } from "../lib/languages";
@@ -17,6 +17,8 @@ export default function Main() {
 	const [isModalVisible, setIsModalVisible] = useState(true);
 	const [isHintVisible, setIsHintVisible] = useState(false);
 
+	const buttonRef = useRef<HTMLButtonElement | null>(null);
+
 	const word = currentWord.word;
 	const hint1 = currentWord.hint1;
 	const hint2 = currentWord.hint2;
@@ -30,8 +32,8 @@ export default function Main() {
 		setIsModalVisible((prev) => !prev);
 	}
 
-	function toggleHintVisibility() {
-		setIsHintVisible((prev) => !prev);
+	function displayHint() {
+		setIsHintVisible(true);
 	}
 
 	function startNewGame() {
@@ -45,6 +47,19 @@ export default function Main() {
 		if (guessedLetters.includes(letter)) return;
 		setGuessedLetters((prev) => [...prev, letter]);
 	}
+
+	useEffect(() => {
+		if (isModalVisible) {
+			window.scrollTo({ top: 0, behavior: "instant" });
+		}
+	}, [isModalVisible]);
+
+	useEffect(() => {
+		if (isGameOver && buttonRef.current) {
+			buttonRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+			buttonRef.current.focus();
+		}
+	}, [isGameOver]);
 
 	return (
 		<main className="flex flex-col justify-center">
@@ -69,7 +84,7 @@ export default function Main() {
 				hint1={hint1}
 				hint2={hint2}
 				isHintVisible={isHintVisible}
-				toggleHintVisibility={toggleHintVisibility}
+				displayHint={displayHint}
 			/>
 			<Word
 				currentWord={word}
@@ -77,16 +92,18 @@ export default function Main() {
 				numGuessesLeft={languages.length - 1 - wrongGuessCount}
 			/>
 			<Keyboard
-				handleKeyClick={handleKeyClick}
 				guessedLetters={guessedLetters}
 				currentWord={word}
 				isGameOver={isGameOver}
+				handleKeyClick={handleKeyClick}
+				displayHint={displayHint}
 			/>
 			<Timer
 				isGameOver={isGameOver}
 				resetTrigger={word}
 			/>
 			<button
+				ref={buttonRef}
 				className="cursor-pointer bg-[#11B5E5] border border-[#D7D7D7] w-56 h-10 mx-auto mt-5 rounded px-3 py-1.5 font-semibold text-lg flex items-center justify-center"
 				onClick={toggleModalVisibility}
 				disabled={isModalVisible}>

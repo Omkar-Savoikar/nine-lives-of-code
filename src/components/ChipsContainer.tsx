@@ -8,7 +8,7 @@ interface ChipsContainerProps {
 	hint1: string;
 	hint2: string;
 	isHintVisible: boolean;
-	toggleHintVisibility: () => void;
+	displayHint: () => void;
 }
 
 export default function ChipsContainer({
@@ -18,7 +18,7 @@ export default function ChipsContainer({
 	hint1,
 	hint2,
 	isHintVisible,
-	toggleHintVisibility,
+	displayHint,
 }: ChipsContainerProps) {
 	return (
 		<div className="flex flex-wrap w-64 gap-2 items-center justify-center mt-5 mx-auto">
@@ -39,7 +39,7 @@ export default function ChipsContainer({
 						<button
 							className="text-green-600"
 							type="button"
-							onClick={toggleHintVisibility}>
+							onClick={displayHint}>
 							Want a Hint?💡
 						</button>
 					)}
