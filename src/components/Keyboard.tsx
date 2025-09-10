@@ -38,7 +38,7 @@ export default function Keyboard({
 	return (
 		<div
 			ref={containerRef}
-			className="flex flex-row flex-wrap justify-center gap-1.5 w-md mx-auto">
+			className="flex flex-row flex-wrap justify-center gap-1.5 w-3/4 md:w-md mx-auto">
 			{letters.split("").map((letter) => (
 				<Key
 					key={letter}

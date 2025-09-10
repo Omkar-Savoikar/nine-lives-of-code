@@ -104,7 +104,7 @@ export default function Main() {
 			/>
 			<button
 				ref={buttonRef}
-				className="cursor-pointer bg-[#11B5E5] border border-[#D7D7D7] w-56 h-10 mx-auto mt-5 rounded px-3 py-1.5 font-semibold text-lg flex items-center justify-center"
+				className="cursor-pointer bg-[#11B5E5] border border-[#D7D7D7] w-56 h-10 mx-auto my-5 rounded px-3 py-1.5 font-semibold text-lg flex items-center justify-center"
 				onClick={toggleModalVisibility}
 				disabled={isModalVisible}>
 				{isGameOver ? "New Game" : "Resatrt"}

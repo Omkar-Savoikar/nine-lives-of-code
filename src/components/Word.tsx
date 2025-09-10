@@ -11,7 +11,7 @@ export default function Word({ currentWord, guessedLetters, numGuessesLeft }: Wo
 
 	return (
 		<>
-			<div className="flex flex-row gap-0.5 justify-center my-5 mx-auto">
+			<div className="flex flex-row gap-0.5 justify-center my-5 mx-auto flex-wrap w-3/4">
 				{Array.from(currentWord).map((letter, index) => (
 					<LetterBlock
 						key={index}
