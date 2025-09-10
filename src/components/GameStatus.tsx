@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { getFarewellText } from "../lib/farewell";
 import { languages } from "../lib/languages";
 
@@ -7,7 +8,7 @@ interface GameStatusProps {
 	wrongGuessCount: number;
 }
 
-export default function GameStatus({ isGameOver, isGameWon, wrongGuessCount }: GameStatusProps) {
+function GameStatus({ isGameOver, isGameWon, wrongGuessCount }: GameStatusProps) {
 	return (
 		<section
 			aria-live="polite"
@@ -44,3 +45,5 @@ export default function GameStatus({ isGameOver, isGameWon, wrongGuessCount }: G
 		</section>
 	);
 }
+
+export default memo(GameStatus);
