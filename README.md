@@ -1,4 +1,4 @@
-# 🐱 Nine Lives of Code
+# 🐱 WordQuest
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Made with React](https://img.shields.io/badge/Made%20with-React-61dafb?logo=react&logoColor=white)](https://reactjs.org/)
@@ -75,7 +75,6 @@ nine-lives-of-code/
 ├── src/
 │ ├── components/      # React components
 │ │ ├── ChipsContainer.tsx
-│ │ ├── GameStatus.tsx
 │ │ ├── Keyboard.tsx
 │ │ ├── Key.tsx
 │ │ ├── Loss.tsx
@@ -107,12 +106,13 @@ This structure keeps UI components isolated from game logic, making the project 
 -   [ ] Update tab title when user is away
 -   [ ] Dificulty levels (Easy / Medium / Hard)
 -   [ ] Leaderboard with fastest completion times
--   [ ] Theming (light/dark mode)
 -   [ ] Show users know how many players they've beaten
+-   [ ] Theming (light/dark mode)
+-   [ ] Game Themes
 
 ## 📖 About This Project
 
-I built Nine Lives of Code while following a Scrimba course to sharpen my React and TypeScript skills.
+I built WordQuest while following a Scrimba course to sharpen my React and TypeScript skills.
 The goal was to take the classic Hangman game and reimagine it with a programming twist — replacing the stick figure with nine coding languages.
 
 This project helped me practice:
